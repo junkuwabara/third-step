@@ -25,4 +25,11 @@ for i in 0..19
 	print(" 英語 ",10*(e_score[i]-e_score.mean)/e_score.stddev+50)
 	print("\n")
 end
-print("理科の得点順は\n",s_score.sort)
+print("理科の得点順は\n")
+s_score.sort
+s_score.reverse
+p s_score
+print("\n英語の得点順は\n")
+e_score.sort
+e_score.reverse
+p e_score
